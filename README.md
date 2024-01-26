@@ -1,4 +1,4 @@
-# Talk : Gérer son infrastructure avec son langage de programmation préféré
+# Pulumi : Gérer son infra avec son langage de programmation préféré
 
 ![](img/tnt_logo.jpg)
 
