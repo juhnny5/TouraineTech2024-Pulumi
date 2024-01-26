@@ -1,0 +1,6 @@
+name: create-instance-on-openstack
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: Create instance on OpenStack with Pulumi
