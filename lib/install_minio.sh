@@ -31,3 +31,5 @@ echo "[✅] Règles de firewall créées."
 
 sudo systemctl restart minio
 echo "[✅] Service redémarré."
+
+echo "[🚸] Tu peux te connecter à http://$(hostname -I | awk '{ print $1 }'):9000"
