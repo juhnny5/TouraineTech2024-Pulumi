@@ -3,6 +3,7 @@ if command -v pulumi &>/dev/null; then
     echo "[✅] Pulumi est installé (version $pulumi_version)."
 else
     echo "[❌] Pulumi n'est pas installé."
+    exit 1
 fi
 
 if command -v multipass &>/dev/null; then
@@ -10,4 +11,5 @@ if command -v multipass &>/dev/null; then
     echo "[✅] Multipass est installé."
 else
     echo "[❌] Multipass n'est pas installé."
+    exit 1
 fi
