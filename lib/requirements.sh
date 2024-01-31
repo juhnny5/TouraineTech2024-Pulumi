@@ -1,3 +1,4 @@
+# Vérifier que les binaires (multipass et pulumi) sont bien installés.
 if command -v pulumi &>/dev/null; then
     pulumi_version=$(pulumi version)
     echo "[✅] Pulumi est installé (version $pulumi_version)."
