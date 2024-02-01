@@ -18,6 +18,8 @@ multipass shell minio
 sudo bash install_minio.sh
 ```
 
+
+
 ## Ce dépôt 🙏
 
 blabla

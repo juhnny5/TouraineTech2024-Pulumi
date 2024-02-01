@@ -1,6 +1,6 @@
 #!/bin/bash
 
-deb_package_name="minio_20240129035632.0.0_arm64.deb"
+deb_package_name="minio.deb"
 wget https://dl.minio.io/server/minio/release/linux-arm64/${deb_package_name}
 echo "[✅] Package DEB ${deb_package_name} téléchargé."
 
