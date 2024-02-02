@@ -7,7 +7,7 @@ source $HOME/.keystonerc
 pulumi stack init demo # Commande déjà appliquée
 
 # Ne pas stocker le state localement mais dans un Bucket type S3
-pulumi login 's3://plstate-openstack-demo1?endpoint=${VM_IP}:9000&disableSSL=true&s3ForcePathStyle=true'
+pulumi login "s3://plstate-openstack-demo1?endpoint=${VM_IP}:9000&disableSSL=true&s3ForcePathStyle=true"
 
 # Voir les modification à apporter
 pulumi preview --non-interactive
