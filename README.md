@@ -20,4 +20,16 @@ sudo bash install_minio.sh
 
 ## Ce dépôt 🙏
 
-blabla
+Ce dépôt et découpé de la manière suivante :
+
+```bash
+demos/
+    1/ # Code de la démo 1 - Créer sa première instance OpenStack
+    2/ # Code de la démo 2 - Comparer avec du code Terraform
+    3/ # Code de la démo 3 - Créer des ressources en apportant une couche d’abstraction (avec Python)
+    4/ # Code de la démo 4 - Créer des ressources YAML (natif)
+    backup/ # Replay des démos (en cas d'effet démo)
+img/ # Images utilisées dans le repo
+lib/ # Scripts utilisés pour setup l'environnement de démo (avec MinIO)
+slides/ # Les slides du talk
+```
