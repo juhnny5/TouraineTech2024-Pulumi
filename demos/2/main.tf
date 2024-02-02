@@ -17,21 +17,21 @@ provider "openstack" {
 }
 
 cloud_init_script = <<-EOF
-    #cloud-config
+#cloud-config
 
-    # Upgrade system
-    package_update: true
-    package_upgrade: true
+# Upgrade system
+package_update: true
+package_upgrade: true
 
-    # Install packages
-    packages:
-    - nginx
-    - net-tools
+# Install packages
+packages:
+- nginx
+- net-tools
 
-    runcmd:
-    - echo "<h1>Coucou TouraineTech 2024</h1>" > /var/www/html/index.nginx-debian.html
-    - echo "<iframe src="https://giphy.com/embed/m0MfjLtKOgTPG" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/m0MfjLtKOgTPG">via GIPHY</a></p>" >> /var/www/html/index.nginx-debian.html
-    - systemctl restart nginx
+runcmd:
+- echo "<h1>Coucou TouraineTech 2024</h1>" > /var/www/html/index.nginx-debian.html
+- echo "<iframe src="https://giphy.com/embed/m0MfjLtKOgTPG" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/m0MfjLtKOgTPG">via GIPHY</a></p>" >> /var/www/html/index.nginx-debian.html
+- systemctl restart nginx
 EOF
 
 resource "openstack_compute_instance_v2" "demo-instance" {
