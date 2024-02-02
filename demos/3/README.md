@@ -17,10 +17,10 @@ pulumi preview --non-interactive
 # Appliquer les modifications à apporter
 pulumi update --non-interactive --yes
 
-# Vérifier que l'instance est créée
+# Vérifier que les zones sont créées
 source $HOME/.keystonerc # Si nouveau shell ouvert
-openstack server list
-watch -n2 'openstack server list'
+openstack zone list
+watch -n2 'openstack zone list'
 
 # Détruire les modifications apportées
 pulumi destroy --non-interactive --yes
