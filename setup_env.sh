@@ -10,4 +10,4 @@ source lib/vm.sh
 
 # echo "[minio-demo]
 # aws_access_key_id = minio
-# aws_secret_access_key = minio" >> ~/.aws/credentials
+# aws_secret_access_key = miniostorage" >> ~/.aws/credentials
