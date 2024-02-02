@@ -1,5 +1,7 @@
 ## Démo 1 : Créer sa première instance OpenStack 😇
 
+### Les commandes
+
 ```bash
 # Pour bien commencer
 source ../../.env
@@ -23,3 +25,7 @@ watch -n2 'openstack server list'
 # Détruire les modifications apportées
 pulumi destroy --non-interactive --yes
 ```
+
+### Valider la démo
+
+Se rendre sur [http://test-pub.pulumi.demo](http://test-pub.pulumi.demo).
