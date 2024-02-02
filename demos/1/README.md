@@ -15,6 +15,11 @@ pulumi preview --non-interactive
 # Appliquer les modifications à apporter
 pulumi update --non-interactive --yes
 
+# Vérifier que l'instance est créée
+source $HOME/.keystonerc # Si nouveau shell ouvert
+openstack server list
+watch -n2 'openstack server list'
+
 # Détruire les modifications apportées
 pulumi destroy --non-interactive --yes
 ```
