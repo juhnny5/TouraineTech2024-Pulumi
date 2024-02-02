@@ -1,23 +1,21 @@
+import yaml
 import pulumi
 import pulumi_openstack as openstack
 
-# Nom de la zone DNS à créer
-domain_name = "pulumi.demo."
+zones_file = 'zones.yaml'
 
-# Créer une zone DNS
-zone = openstack.dns.Zone("pulumi.demo",
-    name=domain_name,
-    description="Zone de démonstration",
-    email="admin@pulumi.demo",
-    ttl=3000,
-    type="PRIMARY"
-)
+with open(zones_file, 'r') as file:
+    content = yaml.safe_load(file)
 
-# Créer un enregistrement DNS pour l'instance (pub)
-pub_record = openstack.dns.RecordSet("demo-instance-pub-record",
-    name="test-pub.pulumi.demo.",
-    zone_id=zone.id,
-    records=[floating_ip.address],
-    type="A",
-    ttl=300
-)
+for c in content:
+    fqdn = c['name']
+    nfqdn = fqdn.rstrip(".")
+    nfqdn2 = nfqdn.replace(".", "-")
+    
+    zone = openstack.dns.Zone(nfqdn2,
+        name=fqdn,
+        description=c['description'],
+        email=c['email'],
+        ttl=c['ttl'],
+        type=c['type']
+    )

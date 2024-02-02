@@ -1,0 +1,16 @@
+---
+- name: "pulumi.demo."
+  description: "Zone de démo"
+  email: "admin@pulumi.demo"
+  ttl: 300
+  type: "PRIMARY"
+- name: "pulumi.tech."
+  description: "Zone de tech"
+  email: "admin@pulumi.tech"
+  ttl: 300
+  type: "PRIMARY"
+- name: "pulumi.dev."
+  description: "Zone de dev"
+  email: "admin@pulumi.dev"
+  ttl: 300
+  type: "PRIMARY"
