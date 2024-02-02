@@ -20,7 +20,7 @@ sudo bash install_minio.sh
 
 ## Ce dépôt 🙏
 
-Ce dépôt et découpé de la manière suivante :
+Ce dépôt est découpé de la manière suivante :
 
 ```bash
 demos/
