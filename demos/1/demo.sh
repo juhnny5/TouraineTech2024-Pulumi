@@ -8,9 +8,7 @@ source $HOME/.keystonerc
 
 # Store state in MinIO
 pe "pulumi login \"s3://plstate-openstack-demo1?endpoint=${VM_IP}:9000&disableSSL=true&s3ForcePathStyle=true\""
-
 pe "pulumi preview --non-interactive"
-
 pe "pulumi update --non-interactive --yes"
-
 pe "openstack server list"
+pe "open http://test-pub.pulumi.demo"
