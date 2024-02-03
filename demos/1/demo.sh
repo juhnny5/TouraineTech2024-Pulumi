@@ -12,7 +12,10 @@ DEMO_PROMPT="${BLUE}demo-1$ ${COLOR_RESET}"
 DEMO_COMMENT_COLOR=$CYAN
 
 # Store state in MinIO
+pei "# Stocker le state dans MinIO"
 pe "pulumi login \"s3://plstate-openstack-demo1?endpoint=${VM_IP}:9000&disableSSL=true&s3ForcePathStyle=true\""
+pei "# Afficher les modifications à apporter"
 pe "pulumi preview --non-interactive"
+pei "# Appliquer les modifications à apporter"
 pe "pulumi update --non-interactive --yes"
 pe "open http://test-pub.pulumi.demo"
