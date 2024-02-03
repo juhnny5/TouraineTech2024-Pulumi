@@ -5,9 +5,6 @@
 Via script :
 
 ```bash
-source .env
-source $HOME/.keystonerc
-
 ./demos/1/demo.sh
 ```
 
