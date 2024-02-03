@@ -2,6 +2,8 @@
 
 ### Les commandes
 
+From scratch :
+
 ```bash
 # Pour bien commencer
 source ../../.env
@@ -24,6 +26,12 @@ watch -n2 'openstack server list'
 
 # Détruire les modifications apportées
 pulumi destroy --non-interactive --yes
+```
+
+Via script :
+
+```bash
+./demo.sh
 ```
 
 ### Valider la démo
