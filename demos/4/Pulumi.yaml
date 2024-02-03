@@ -2,12 +2,13 @@ name: openstack-instance-native-yaml
 runtime: yaml
 description: Create an OpenStack instance with native Pulumi YAML
 outputs:
-  # Export the IP of the instance
   instanceIP: ${instance.accessIpV4}
 resources:
-  # Create an OpenStack resource (Compute Instance)
   instance:
     properties:
-      flavorName: s1-2
-      imageName: Ubuntu 22.04
+      flavorName: m1.small
+      imageName: Ubuntu Server 22.04
+      keyPair: jbriault
+      networks:
+        - name: tenant_network
     type: openstack:compute:Instance
