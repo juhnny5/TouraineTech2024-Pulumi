@@ -6,6 +6,7 @@ outputs:
 resources:
   instance:
     properties:
+      name: demo-instance
       flavorName: m1.small
       imageName: Ubuntu Server 22.04
       keyPair: jbriault
