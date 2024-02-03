@@ -2,6 +2,15 @@
 
 ### Les commandes
 
+Via script :
+
+```bash
+source .env
+source $HOME/.keystonerc
+
+./demos/1/demo.sh
+```
+
 From scratch :
 
 ```bash
@@ -26,12 +35,6 @@ watch -n2 'openstack server list'
 
 # Détruire les modifications apportées
 pulumi destroy --non-interactive --yes
-```
-
-Via script :
-
-```bash
-./demo.sh
 ```
 
 ### Valider la démo
