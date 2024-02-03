@@ -2,6 +2,14 @@
 
 ### Les commandes
 
+Via script :
+
+```bash
+./demos/4/demo.sh
+```
+
+From scratch :
+
 ```bash
 # Pour bien commencer
 source ../../.env
