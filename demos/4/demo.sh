@@ -8,7 +8,7 @@ source $HOME/.keystonerc
 
 TYPE_SPEED=50 # Accelerate typing
 DEMO_CMD_COLOR="" # No bold
-DEMO_PROMPT="${BLUE}$ ${COLOR_RESET}"
+DEMO_PROMPT="${BLUE}demo-4$ ${COLOR_RESET}"
 DEMO_COMMENT_COLOR=$CYAN
 
 # Store state in MinIO
