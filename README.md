@@ -25,9 +25,15 @@ Ce dépôt est découpé de la manière suivante :
 ```bash
 demos/
     1/ # Code de la démo 1 - Créer sa première instance OpenStack
+        => demo.sh # Script de démonstration
+        => README.md
     2/ # Code de la démo 2 - Comparer avec du code Terraform
+        => README.md
     3/ # Code de la démo 3 - Créer des ressources en apportant une couche d’abstraction (avec Python)
+        => README.md
     4/ # Code de la démo 4 - Créer des ressources YAML (natif)
+        => demo.sh # Script de démonstration
+        => README.md
     backup/ # Replay des démos (en cas d'effet démo)
 img/ # Images utilisées dans le repo
 lib/ # Scripts utilisés pour setup l'environnement de démo (avec MinIO)
