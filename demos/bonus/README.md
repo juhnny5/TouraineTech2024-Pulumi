@@ -1,4 +1,4 @@
-# Démo 4 : Créer des ressources (avec YAML) 🤓
+# Démo 5 (bonus) : Créer des ressources (avec YAML) 🤓
 
 ### Les commandes
 
