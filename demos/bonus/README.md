@@ -1,4 +1,4 @@
-# Démo 5 (bonus) : Créer des ressources (avec YAML) 🤓
+# Démo 5 (bonus) : Convertir un projet Pulumi (YAML -> Python)
 
 ### Les commandes
 
