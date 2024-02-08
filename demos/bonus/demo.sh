@@ -14,9 +14,5 @@ DEMO_COMMENT_COLOR=$CYAN
 # Store state in MinIO
 pei "# Stocker le state dans MinIO"
 pe "pulumi login \"s3://plstate-openstack-demo5?endpoint=${VM_IP}:9000&disableSSL=true&s3ForcePathStyle=true\""
-pei "# Afficher les modifications à apporter"
-pe "pulumi preview --non-interactive"
-pei "# Appliquer les modifications à apporter"
-pe "pulumi update --non-interactive --yes"
 pei "# Convertir le projet de YAML vers Python"
 p "pulumi convert  --language python"
